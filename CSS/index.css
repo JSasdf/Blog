@@ -1,0 +1,84 @@
+@import "global.css";
+@import "footer.css";
+@import "header.css";
+
+/*Intro Section*/
+
+#main {
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem; 
+    grid-template-areas:
+    "box1 box1 box1 box2"
+    "box1 box1 box1 box3";
+}
+#box1 {
+    grid-area: box1;
+    background-image: linear-gradient(rgba(0,0,0,0.7), transparent),url(../Pictures/IMG-0261.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#box2 {
+    grid-area: box2;
+    background-image: linear-gradient(rgba(0,0,0,0.7), transparent), url(../Pictures/IMG-0239.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#box3 {
+    grid-area: box3;
+    background-image: linear-gradient(rgba(0,0,0,0.7), transparent), url(../Pictures/IMG-0277.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+}
+.post h4 {
+    font-size: 1.8rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+.post p {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+button {
+    padding: 0.5rem 0.5rem;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*Media Friendly*/
+@media (max-width: 950px) {
+    nav {
+      text-align: center;  
+    }
+    #logo {
+      padding: 1rem;
+    }
+    #main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      "box1 box1"
+      "box2 box2"
+      "box3 box3";
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+}

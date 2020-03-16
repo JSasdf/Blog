@@ -1,0 +1,24 @@
+header {
+  background: #131c27;
+  color: white;
+}
+nav {
+  min-height: 7vh;
+  display: flex;
+  width: 90%;
+  padding: 2rem;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+}
